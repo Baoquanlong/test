@@ -61,7 +61,7 @@ def save(srcs,titles,main_text):
         os.mkdir(path)
         
     for i,src,title,main_text in zip(range(len(titles)),srcs,titles,main_text):
-        with open(path+'/{}.txt'.format(i),mode='w',encoding='utf-8') as f:
+        with open(path+'/{}.txt'.format(i+16),mode='w',encoding='utf-8') as f:
             f.write('\t'+src)          
             f.write('\n')
             f.write('\t'+title)
